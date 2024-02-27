@@ -1,6 +1,6 @@
 locals {
-  region                = "asia-southeast1"
-  zone                  = "asia-southeast1-a"
+  region                = "us-central1"
+  zone                  = "us-central1-a"
   airbyte_machine_type  = "e2-small"
   metabase_machine_type = "e2-small"
   airflow_machine_type  = "e2-medium"
@@ -16,13 +16,5 @@ variable "project_id" {
 }
 
 variable "billing_id" {
-  type = string
-}
-
-variable "folder_id" {
-  type = string
-}
-
-variable "org_id" {
   type = string
 }
